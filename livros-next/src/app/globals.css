@@ -1,0 +1,113 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+:root {
+  --foreground-rgb: 30, 40, 90;
+  --background-start-rgb: 4, 2, 2;
+  --background-end-rgb: 2, 255, 5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 44, 0, 55;
+    --background-end-rgb: 44, 0, 55;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Estilo para o elemento (navegação) */
+nav {
+    background-color: #9a87da75; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 15px;
+    font-size: 20pt;
+
+  }
+  
+  
+  /* Estilo para os links do menu */
+  nav a {
+    text-decoration: none; 
+    color: #ffffff;
+    margin: 0 10px; 
+    transition: color 0.3s; 
+  }
+  
+  /* Estilo para os links do menu ao passar o mouse */
+  nav a:hover {
+    color: #cec2bf; 
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .main {
+    background-color: #8a8a8a90;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+  }
+
+  h1{
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 20pt;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 17px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #e1d9d9c6;
+  }
+  
+  select {
+    height: 40px;
+  }
+  
+  button {
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8e61c88e;
+  }
+
+
+
+
+
+
